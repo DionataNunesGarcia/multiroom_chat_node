@@ -61,40 +61,105 @@ img {
 }
 
 .conversa{
-	margin-top:70px;
-	margin-bottom: 70px;
+    margin-top:70px;
+    margin-bottom: 70px;
 }
 
-.participantes{
-	margin-top:70px;
-	margin-bottom: 70px;
+.conversa-completa{
+    padding: 0 25px;
+}
+
+.participantes .claro, .participantes .escuro{
+    padding: 7px 10px 0px;
+    font-weight: bold !important;
 }
 
 .participante{
-	display:block;
-	margin-bottom:15px;
+    display:block;
+    margin-bottom: 10px;
 }
 
 .participante img{
-	margin-top:-10px;
+    margin-top:-5px;
+    margin-right: 5px; 
 }
 
 .dialogo{
-	width:100%;
-	height:auto;
-	margin-bottom:15px;
-	padding:10px;
-	background:#D8F0FE;
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+    padding: 10px 10px 1px !important;
+    background:#D8F0FE;
 }
 
-.dialogo h4{
-	font-size:15px;
-	font-weight: bold;
-	color:#8B7777;
+.dialogo h4, .dialogo-entrada h4{
+    font-size:15px;
+    font-weight: bold;
 }
 
-.dialogo p{
-	font-size:12px;
-	padding-left:15px;
-	color:#8B7777;
+.dialogo p, .dialogo-entrada p{
+    font-size:13px;
+    padding-left:15px;
 }
+
+.escuro h4, .escuro p, .escuro span{    
+    color:#fff;
+}
+
+.claro h4, .claro p, .claro span{    
+    color:#000;
+}
+
+.dialogo-entrada{
+    background: #c1f5c1;
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+    padding: 10px 10px 1px !important;    
+}
+
+.form-control[type=color] {
+    height: auto;
+}
+
+/* Need styles for -webkit- and -moz- */
+
+.form-control[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+}
+.form-control[type=color]:-moz-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+}
+.form-control[type=color]:-ms-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.form-control[type=color][list="colors"]::-webkit-color-swatch-wrapper {
+    padding: .5rem .75rem;
+}
+.form-control[type=color][list="colors"]:-moz-color-swatch-wrapper {
+    padding: .5rem .75rem;
+}
+.form-control[type=color][list="colors"]:-ms-color-swatch-wrapper {
+    padding: .5rem .75rem;
+}
+
+.form-control[type=color]::-webkit-color-swatch {
+    height: 22px; /* font-size + line-height */
+    padding: 0;
+    margin: 0;
+}
+.form-control[type=color]::-moz-color-swatch {
+    height: 22px; /* font-size + line-height */
+    padding: 0;
+    margin: 0;
+}
+.form-control[type=color]:-ms-color-swatch {
+    height: 22px; /* font-size + line-height */
+    padding: 0;
+    margin: 0;
+}
+
